@@ -24,6 +24,21 @@ return {
       config = function()
         vim.fn["mkdp#util#install"]()
       end
+    },
+    {
+      "pest-parser/pest.vim",
+      lazy = false
+    },
+    {
+      "pocco81/auto-save.nvim",
+      lazy = false
+    },
+    {
+      "Lilja/zellij.nvim",
+      lazy =false,
+      config = function()
+        require('zellij').setup({})
+      end
     }
   }
 }
